@@ -35,13 +35,24 @@ if (occupation = occupationOne.toLowerCase) {
     console.log("We are not hiring at this time.")
 }
 
-// let weaponChoiceOne = "Hammer";
-// let weaponChoiceTwo = "Sword";
-// let weaponChoiceThree = "Rolling Pin"
+let weaponChoiceOne = "Hammer";
+let weaponChoiceTwo = "Sword";
+let weaponChoiceThree = "Rolling Pin"
 
-// let eventIntro = readline.question(`We are being attacked! Select a weapon now!
-// ${weaponChoiceOne}
-// ${weaponChoiceTwo}
-// ${weaponChoiceThree}
-// What do you choose? `);
-// console.log(eventIntro);
+let eventIntro = readline.question(`We are being attacked! Select a weapon now!
+${weaponChoiceOne}
+${weaponChoiceTwo}
+${weaponChoiceThree}
+What do you choose? `);
+console.log(eventIntro);
+
+let age = readline.question(`Are you even old enough for this battle?
+    Enter your age: `);
+let canFight = true;
+
+
+if (age >= 18 && canFight) {
+  console.log("Welcome to the fight!");
+} else {
+  console.log("You must stay the children!");
+}
