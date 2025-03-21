@@ -25,7 +25,8 @@ if (userInput <1) {
 let occupationOne = "Blacksmith";
 let occupationTwo = "Baker";
 
-let occupation = readline.question(`What will be your occupation? ${occupationOne} or ${occupationTwo}: `);
+let occupation = readline.question(`What will be your occupation? 
+${occupationOne} or ${occupationTwo}: `);
 
 if (occupation = occupationOne.toLowerCase) {
     console.log("Nice choice! Our current blacksmith could use the extra hand.")
